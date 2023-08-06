@@ -1,0 +1,10 @@
+.Welcome1Container {
+  background: url(../images/welcome1.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.font {
+  font-family: "Indie Flower", cursive;
+}
