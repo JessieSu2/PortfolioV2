@@ -20,8 +20,8 @@ function Home1() {
           </div>
         </div>
         {/* md:col-span-6 md:col-start-6 */}
-        <div className="text-left px-8 pt-5 pb-5 md:w-3/5 md:flex-1 md:flex md:overflow-hidden">
-          <div className="md:flex-1 md:overflow-y-scroll">
+        <div className="text-left px-8 pt-5 pb-5 w-3/5 md:flex-1 md:flex md:overflow-hidden">
+          <div className="md:flex-1 md:overflow-scroll ">
             <div className="">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               fringilla nisl ante, posuere mattis metus dapibus ac. Integer
@@ -35,9 +35,9 @@ function Home1() {
               urna.
             </div>
             <div className="left-0 flex pt-5">Projects</div>
-            <div>
+            <div className="w-1/2">
               {projects.map((project, index) => (
-                <div className="flex pt-2" key={index}>
+                <div className="" key={index}>
                   <div className="inline-flex">
                     <div className="pr-5">{project.time}</div>
                     <div className="">
