@@ -1,14 +1,38 @@
 import React from "react";
-import { projects } from "./info";
+import { projects, intro } from "./info";
 // h-[calc(100vh-3.5rem)]
 
+function image(link) {
+  console.log(link);
+  if (link.type === "Figma") {
+    return (
+      <a
+        className="pr-2"
+        href={link.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="pr-2 p-1 flex bg-slate-200 rounded-lg">
+          <img
+            src={require("../images/5968705.png")}
+            alt="figma"
+            className="w-5"
+          ></img>
+          <div>{link.name}</div>
+        </div>
+      </a>
+    );
+  }
+}
+
 function Home1() {
-  console.log(projects);
+  console.log(projects[0].bubble.sort());
+  for (let index = 0; index < projects.length; index++) {
+    projects[index].bubble.sort();
+  }
   return (
     <div className="h-screen md:h-[calc(100vh-3.5rem)] md:overflow-hidden">
-      {/* grid sm:grid-cols-1 md:grid-cols-12 pt-5 md:pt-10 */}
       <div className=" bg-[#c7d8e0] md:flex md:h-[calc(100vh-3.5rem)]">
-        {/* md:mx-auto md:col-span-5 */}
         <div className="md:w-2/5 md:flex-none pt-5">
           <div>Hi, i'm</div>
           <h1 className="font-serif text-5xl">Jessie Su</h1>
@@ -19,38 +43,29 @@ function Home1() {
             Loves designing and building full-stack applications
           </div>
         </div>
-        {/* md:col-span-6 md:col-start-6 */}
-        <div className="text-left px-8 pt-5 pb-5 w-3/5 md:flex-1 md:flex md:overflow-hidden">
-          <div className="md:flex-1 md:overflow-scroll ">
-            <div className="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              fringilla nisl ante, posuere mattis metus dapibus ac. Integer
-              malesuada dapibus maximus. Etiam dignissim enim risus, eu viverra
-              turpis pellentesque sit amet. Maecenas sed lectus a nibh
-              scelerisque placerat. Aenean elementum nibh eget sagittis sodales.
-              Ut vehicula massa sapien, sit amet interdum tortor pulvinar sit
-              amet. Nunc ac mauris facilisis, tristique nibh sed, tempus nisl.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Nulla lectus sapien, imperdiet sit amet aliquam nec, tempor non
-              urna.
-            </div>
+        <div className="text-left px-8 pt-5 pb-5 md:w-3/5 md:flex-1 md:flex md:overflow-hidden">
+          <div className="md:flex-1 md:overflow-y-scroll pr-2">
+            <div className="text-sm md:text-base">{intro}</div>
             <div className="left-0 flex pt-5">Projects</div>
-            <div className="w-1/2">
+            <div className="text-sm md:text-base">
               {projects.map((project, index) => (
                 <div className="" key={index}>
-                  <div className="inline-flex">
-                    <div className="pr-5">{project.time}</div>
-                    <div className="">
+                  <div className="flex pt-2">
+                    <div className="pr-5 w-3/12">{project.time}</div>
+                    <div className="w-9/12 pl-2">
                       <div>{project.title}</div>
-                      <div className="pt-2">{project.description}</div>
-                      <div className="pt-2 flex">
-                        {projects[index].bubble.map((bubble, index) => (
-                          <div className="pr-2" key={index}>
-                            <div className="p-1 px-2 bg-[#C7B8D6] rounded-full">
+                      <div className="pt-1">{project.description}</div>
+                      <div className="pt-1 flex-wrap flex">
+                        {project.bubble.map((bubble, index) => (
+                          <div className="pr-2 flex py-1" key={index}>
+                            <div className="p-1 px-2 bg-[#C7B8D6] rounded-lg">
                               {bubble}
                             </div>
                           </div>
                         ))}
+                      </div>
+                      <div className="flex py-1">
+                        {project.links.map((link, index) => image(link))}
                       </div>
                     </div>
                   </div>
