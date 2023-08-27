@@ -51,6 +51,7 @@ export const projects = [
       },
       {
         name: "Prototype",
+        type: "Figma",
         link: "https://www.figma.com/proto/xwULaRKxopyPXphfAFFuzL/Nusketch?type=design&node-id=409-75&t=dEjTUvhA9ppJOQMj-0&scaling=scale-down&page-id=409%3A74&starting-point-node-id=409%3A75",
       },
     ],
@@ -65,6 +66,7 @@ export const projects = [
     links: [
       {
         name: "Wireframe",
+        type: "Figma",
         link: "https://www.figma.com/file/d0ftTkBB0bVm7p2rjrXJjm/Easy-Trader?type=design&node-id=0%3A1&mode=design&t=hHvdYE7fiFvqah2s-1",
       },
     ],
@@ -75,7 +77,13 @@ export const projects = [
     description:
       "A web-based restaurant order and delivery system, facilitating menu browsing, ordering, and seamless food delivery for customers",
     bubble: ["HTML", "CSS", "React", "Bootstrap", "Java", "MySQL"],
-    links: [],
+    links: [
+      {
+        name: "Github",
+        type: "GitHub",
+        link: "",
+      },
+    ],
   },
   {
     time: "Oct 2021 - Dec 2021",
@@ -86,8 +94,20 @@ export const projects = [
     links: [
       {
         name: "Youtube",
+        type: "Youtube",
         link: "https://youtu.be/uMG2iKQ3erE",
       },
     ],
+  },
+];
+
+export const achievements = [
+  {
+    imgSrc:
+      "https://press.etc.cmu.edu/sites/default/files/journals/cover/CMU-Press-Well-Played-12-1-750x1000-product-feature.jpg",
+    name: "Well played",
+    description:
+      "Talking about Women gamers comming within a Toxic Community: Threats and Opportunities",
+    link: "https://press.etc.cmu.edu/journals/well-played-vol-12-no1",
   },
 ];
