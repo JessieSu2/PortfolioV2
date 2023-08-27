@@ -34,7 +34,8 @@ export const projects = [
   {
     time: "Nov 2022 - Jun 2023",
     title: "Nusketch",
-    description: "description",
+    description:
+      "An art therapy mobile application tailored for people diagnosed with autism, as well as a means to promote training inclusivity.",
     bubble: ["Flutter", "Dart", "Android", "Figma"],
     tag: "App",
     links: [
@@ -57,7 +58,8 @@ export const projects = [
   {
     time: "Sept 2022 - Dec 2022",
     title: "Easy Trader",
-    description: "description",
+    description:
+      "A trading simulator aimed to help users acquire safe stock trading practices and hone their trading expertise",
     bubble: ["HTML", "React", "Bootstrap"],
     tag: "Website",
     links: [
@@ -70,14 +72,16 @@ export const projects = [
   {
     time: "Mar 2022 - Jun 2022",
     title: "OneBite",
-    description: "description",
+    description:
+      "A web-based restaurant order and delivery system, facilitating menu browsing, ordering, and seamless food delivery for customers",
     bubble: ["HTML", "CSS", "React", "Bootstrap", "Java", "MySQL"],
     links: [],
   },
   {
     time: "Oct 2021 - Dec 2021",
     title: "MagicalWalk",
-    description: "description",
+    description:
+      "A relaxing and calm 3-d game where the objective is to walk down three paths and turn on all fireplaces which will trigger an event of flowing water at a mountain indicating completion",
     bubble: ["Unity", "C#"],
     links: [
       {
