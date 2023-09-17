@@ -4,28 +4,32 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Error from "./Error";
-import Welcome1 from "./Welcome1/Welcome1.js";
 import Recruiters1 from "./Welcome1/Recruiters1";
 import Contact1 from "./Welcome1/Contact1";
-import App from "./App";
 import Home1 from "./Welcome1/Home1";
-
+import Base from "./Welcome1/Base";
+import App from "./App";
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Base />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/Enter",
     element: <App />,
     errorElement: <Error />,
     children: [
       {
-        path: "/Home",
+        path: "/Enter/Home",
         element: <Home1 />,
       },
       {
-        path: "/Recruiters",
+        path: "/Enter/Recruiters",
         element: <Recruiters1 />,
       },
       {
-        path: "/Contact",
+        path: "/Enter/Contact",
         element: <Contact1 />,
       },
     ],

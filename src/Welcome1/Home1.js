@@ -1,6 +1,8 @@
 import React from "react";
 import { projects, intro, achievements } from "./info";
 // h-[calc(100vh-3.5rem)]
+import { ImLinkedin } from "react-icons/im";
+import { AiOutlineMail } from "react-icons/ai";
 
 function GetImage(link) {
   if (link) {
@@ -105,6 +107,26 @@ function Home1() {
           <div className="text-[12px]">Who</div>
           <div className="px-5">
             Loves designing and building full-stack applications
+          </div>
+          <div className="flex justify-center pt-5">
+            <div className="pr-2">
+              <a
+                href="https://www.linkedin.com/in/jessiesu01/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImLinkedin size={30} />
+              </a>
+            </div>
+            <div>
+              <a
+                href="mailto:JessieSu3@gmail.com?"
+                target="blank"
+                rel="noreferrer"
+              >
+                <AiOutlineMail size={30} />
+              </a>
+            </div>
           </div>
         </div>
         <div className="text-left px-8 pt-5 pb-5 md:w-3/5 md:flex-0 md:flex md:overflow-hidden">
