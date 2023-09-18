@@ -4,6 +4,7 @@ import { projects, intro, achievements } from "./info";
 import { TbMail } from "react-icons/tb";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { BiDownload } from "react-icons/bi";
+import Resume from "../Su_Jessie_2023.pdf";
 
 function GetImage(link) {
   if (link) {
@@ -148,9 +149,9 @@ function Home1() {
             </div>
             <div className="pr-2">
               <a
-                href="https://www.linkedin.com/in/jessiesu01/"
-                target="_blank"
-                rel="noreferrer"
+                href={Resume}
+                // target="blank" rel="noreferrer"
+                download="Su_Jessie_2023"
               >
                 <BiDownload size={30} />
               </a>
