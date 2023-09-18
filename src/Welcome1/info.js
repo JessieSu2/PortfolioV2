@@ -29,6 +29,11 @@ export const projects = [
         type: "Figma",
         link: "https://www.figma.com/file/88TjVWvhDEIhGq7E0CrjY4/TrendyDrinks?type=design&mode=design&t=dEjTUvhA9ppJOQMj-1",
       },
+      {
+        name: "TestFlight",
+        type: "TestFlight",
+        link: "mailto:JessieSu3@gmail.com?subject=New%20tester%20for%20TrendyDrinks&body=I%20would%20love%20to%20try%20your%20app,%20here%20is%20my%20email:",
+      },
     ],
   },
   {

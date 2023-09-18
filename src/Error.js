@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { Player } from "@lottiefiles/react-lottie-player";
 function Error() {
   return (

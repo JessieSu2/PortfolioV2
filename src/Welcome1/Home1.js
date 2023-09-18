@@ -1,38 +1,39 @@
 import React from "react";
 import { projects, intro, achievements } from "./info";
 // h-[calc(100vh-3.5rem)]
-import { ImLinkedin } from "react-icons/im";
-import { AiOutlineMail } from "react-icons/ai";
+import { TbMail } from "react-icons/tb";
+import { TbBrandLinkedin } from "react-icons/tb";
+import { BiDownload } from "react-icons/bi";
 
 function GetImage(link) {
   if (link) {
     if (link.type === "Figma") {
       return (
         <a
-          className="pr-2"
+          className="pr-2 pt-2"
           href={link.link}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="pr-2 p-1 flex bg-slate-200 rounded-lg">
+          <div className="pr-2 p-1 flex-wrap flex bg-slate-200 rounded-lg">
             <img
               src={require(`../images/figma.png`)}
               alt="figma"
               className="w-5 mr-1"
             ></img>
-            <div>{link.name}</div>
+            <div className="">{link.name}</div>
           </div>
         </a>
       );
     } else if (link.type === "GitHub") {
       return (
         <a
-          className="pr-2"
+          className="pr-2 pt-2"
           href={link.link}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="pr-2 p-1 flex bg-slate-200 rounded-lg">
+          <div className="pr-2 p-1 flex-wrap flex bg-slate-200 rounded-lg">
             <img
               src={require(`../images/github-mark.png`)}
               alt="github"
@@ -42,15 +43,33 @@ function GetImage(link) {
           </div>
         </a>
       );
-    } else if (link.type === "Youtube") {
+    } else if (link.type === "TestFlight") {
       return (
         <a
-          className="pr-2"
+          className="pr-2 pt-2"
           href={link.link}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="pr-2 p-1 flex bg-slate-200 rounded-lg">
+          <div className="pr-2 p-1  flex-wrap flex bg-slate-200 rounded-lg">
+            <img
+              src={require(`../images/testflight.png`)}
+              alt="testflight"
+              className="w-5 mr-1"
+            ></img>
+            <div>{link.name}</div>
+          </div>
+        </a>
+      );
+    } else if (link.type === "Youtube") {
+      return (
+        <a
+          className="pr-2 pt-2"
+          href={link.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="pr-2 p-1 flex-wrap flex bg-slate-200 rounded-lg">
             <img
               src={require(`../images/youtube.png`)}
               alt="youtube"
@@ -115,22 +134,31 @@ function Home1() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImLinkedin size={30} />
+                <TbBrandLinkedin size={30} />
               </a>
             </div>
-            <div>
+            <div className="pr-2">
               <a
                 href="mailto:JessieSu3@gmail.com?"
                 target="blank"
                 rel="noreferrer"
               >
-                <AiOutlineMail size={30} />
+                <TbMail size={30} />
+              </a>
+            </div>
+            <div className="pr-2">
+              <a
+                href="https://www.linkedin.com/in/jessiesu01/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BiDownload size={30} />
               </a>
             </div>
           </div>
         </div>
         <div className="text-left px-8 pt-5 pb-5 md:w-3/5 md:flex-0 md:flex md:overflow-hidden">
-          <div className="md:flex-1 md:overflow-y-scroll pr-2">
+          <div className="md:flex-1 md:overflow-y-scroll">
             {/* Intro */}
             <div className="text-sm lg:w-9/12">{intro}</div>
             {/* Projects */}
@@ -140,21 +168,21 @@ function Home1() {
                 <div className="" key={index}>
                   <div className="flex pt-2">
                     <div className="pr-5 w-3/12 lg:w-2/12">{project.time}</div>
-                    <div className="w-9/12 pl-2 lg:w-7/12">
+                    <div className="w-9/12 lg:w-7/12">
                       <div className="font-semibold text-[14px]">
                         {project.title}
                       </div>
                       <div className="pt-1">{project.description}</div>
-                      <div className="pt-1 flex-wrap flex">
+                      <div className="flex-wrap flex">
                         {project.bubble.map((bubble, index) => (
-                          <div className="pr-2 flex py-1" key={index}>
+                          <div className="pr-2 py-1" key={index}>
                             <div className="p-1 px-2 bg-[#C7B8D6] rounded-lg">
                               {bubble}
                             </div>
                           </div>
                         ))}
                       </div>
-                      <div className="flex py-1">
+                      <div className="flex flex-wrap">
                         {project.links.map((link, index) => GetImage(link))}
                       </div>
                     </div>

@@ -8,3 +8,35 @@
 .font {
   font-family: "Indie Flower", cursive;
 }
+
+.appear {
+  animation-name: appear;
+  animation-duration: 4s;
+}
+.appear2 {
+  animation-name: appear;
+  animation-duration: 6s;
+}
+
+.updown {
+  animation-name: updown;
+  animation-duration: 6s;
+}
+
+@keyframes appear {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes updown {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+  }
+}
