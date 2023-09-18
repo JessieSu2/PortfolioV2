@@ -8,7 +8,7 @@ function Base() {
   const navigate = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      navigate("/Enter/Home", { replace: true });
+      navigate("/Enter/Home");
     }, "4000");
   });
   return (
