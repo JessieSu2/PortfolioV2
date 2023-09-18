@@ -9,6 +9,7 @@ import Contact1 from "./Welcome1/Contact1";
 import Home1 from "./Welcome1/Home1";
 import Base from "./Welcome1/Base";
 import App from "./App";
+
 const router = createBrowserRouter([
   {
     path: "/",
