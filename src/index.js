@@ -14,7 +14,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Base />,
-    errorElement: <Error />,
   },
   {
     path: "/Enter",
