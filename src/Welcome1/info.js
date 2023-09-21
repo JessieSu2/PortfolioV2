@@ -10,6 +10,11 @@ export const projects = [
     tag: "Website",
     links: [
       {
+        name: "GitHub",
+        type: "GitHub",
+        link: "https://github.com/JessieSu2/PortfolioV2",
+      },
+      {
         name: "Wireframe",
         type: "Figma",
         link: "https://www.figma.com/file/TZu2NfVwbmRCbovI6c3irL/Portfolio?type=design&node-id=0%3A1&mode=design&t=dEjTUvhA9ppJOQMj-1",
@@ -24,6 +29,11 @@ export const projects = [
     bubble: ["React Native", "Firebase", "Expo", "JavaScript", "Figma"],
     tag: "Mobile",
     links: [
+      {
+        name: "GitHub",
+        type: "GitHub",
+        link: "https://github.com/JessieSu2/TrendyDrinks",
+      },
       {
         name: "Wireframe",
         type: "Figma",
@@ -70,6 +80,11 @@ export const projects = [
     tag: "Website",
     links: [
       {
+        name: "GitHub",
+        type: "GitHub",
+        link: "https://github.com/jingshiliu/easy-trader-ctp",
+      },
+      {
         name: "Wireframe",
         type: "Figma",
         link: "https://www.figma.com/file/d0ftTkBB0bVm7p2rjrXJjm/Easy-Trader?type=design&node-id=0%3A1&mode=design&t=hHvdYE7fiFvqah2s-1",
@@ -86,7 +101,7 @@ export const projects = [
       {
         name: "Github",
         type: "GitHub",
-        link: "",
+        link: "https://github.com/JessieSu2/CSC322-OneBite",
       },
     ],
   },
@@ -97,6 +112,11 @@ export const projects = [
       "A relaxing and calm 3-d game where the objective is to walk down three paths and turn on all fireplaces which will trigger an event of flowing water at a mountain indicating completion",
     bubble: ["Unity", "C#"],
     links: [
+      {
+        name: "GitHub",
+        type: "GitHub",
+        link: "https://github.com/JessieSu2/MagicalWalk",
+      },
       {
         name: "Youtube",
         type: "Youtube",
