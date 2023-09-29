@@ -14,11 +14,8 @@ function Contact1() {
           If you have any open job opportunities, want to chat about games,
           cooking, baking, or even anime, shoot me an email!
         </div>
-        <button
-          className="p-2 rounded bg-[#C7B8D6] text-[14px]"
-          value="JessieSu3@gmail.com"
-        >
-          Email
+        <button className="p-2 rounded bg-[#C7B8D6] text-[14px]">
+          <a href="mailto:JessieSu3@gmail.com">Email</a>
         </button>
       </div>
       <img
