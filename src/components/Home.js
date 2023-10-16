@@ -5,7 +5,7 @@ import { TbMail } from "react-icons/tb";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { BiDownload } from "react-icons/bi";
 import Resume from "../Su_Jessie_2023.pdf";
-
+import Base from "./Base";
 function GetImage(link) {
   if (link) {
     if (link.type === "Figma") {
@@ -117,88 +117,95 @@ function Home() {
     projects[index].bubble.sort();
   }
   return (
-    <div className="h-screen md:h-[calc(100vh-3.5rem)] md:overflow-hidden">
-      <div className=" bg-[#c7d8e0] md:flex md:h-[calc(100vh-3.5rem)]">
-        <div className="md:w-2/5 md:flex-none pt-5">
-          <div>Hi, i'm</div>
-          <h1 className="font-serif text-5xl">Jessie Su</h1>
-          <div className="text-[12px]">a</div>
-          <h2>Software Engineer</h2>
-          <div className="text-[12px]">Who</div>
-          <div className="px-5">
-            Loves designing and building full-stack applications
+    <div>
+      <section>
+        <Base />
+      </section>
+      <div className="h-screen bg-[#c7d8e0] md:overflow-hidden">
+        <div className="md:flex h-screen">
+          <div className="md:w-2/5 md:flex-none pt-5">
+            <div>Hi, i'm</div>
+            <h1 className="font-serif text-5xl">Jessie Su</h1>
+            <div className="text-[12px]">a</div>
+            <h2>Software Engineer</h2>
+            <div className="text-[12px]">Who</div>
+            <div className="px-5">
+              Loves designing and building full-stack applications
+            </div>
+            <div className="flex justify-center pt-5">
+              <div className="pr-2">
+                <a
+                  href="https://www.linkedin.com/in/jessiesu01/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <TbBrandLinkedin size={30} />
+                </a>
+              </div>
+              <div className="pr-2">
+                <a
+                  href="mailto:JessieSu3@gmail.com?"
+                  target="blank"
+                  rel="noreferrer"
+                >
+                  <TbMail size={30} />
+                </a>
+              </div>
+              <div className="pr-2">
+                <a
+                  href={Resume}
+                  // target="blank" rel="noreferrer"
+                  download="Su_Jessie_2023"
+                >
+                  <BiDownload size={30} />
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="flex justify-center pt-5">
-            <div className="pr-2">
-              <a
-                href="https://www.linkedin.com/in/jessiesu01/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <TbBrandLinkedin size={30} />
-              </a>
-            </div>
-            <div className="pr-2">
-              <a
-                href="mailto:JessieSu3@gmail.com?"
-                target="blank"
-                rel="noreferrer"
-              >
-                <TbMail size={30} />
-              </a>
-            </div>
-            <div className="pr-2">
-              <a
-                href={Resume}
-                // target="blank" rel="noreferrer"
-                download="Su_Jessie_2023"
-              >
-                <BiDownload size={30} />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="text-left px-8 pt-5 pb-5 md:w-3/5 md:flex-0 md:flex md:overflow-hidden">
-          <div className="md:flex-1 md:overflow-y-scroll">
-            {/* Intro */}
-            <div className="text-sm lg:w-9/12">{intro}</div>
-            {/* Projects */}
-            <div className="left-0 flex pt-5">Projects</div>
-            <div className="text-sm">
-              {projects.map((project, index) => (
-                <div className="" key={index}>
-                  <div className="flex pt-2">
-                    <div className="pr-5 w-3/12 lg:w-2/12">{project.time}</div>
-                    <div className="w-9/12 lg:w-7/12">
-                      <div className="font-semibold text-[14px]">
-                        {project.title}
+          <div className="text-left px-8 pt-5 pb-5 md:w-3/5 md:flex-0 md:flex md:overflow-hidden">
+            <div className="md:flex-1 md:overflow-y-scroll">
+              {/* Intro */}
+              <div className="text-sm lg:w-9/12">{intro}</div>
+              {/* Projects */}
+              <div className="left-0 flex pt-5">Projects</div>
+              <div className="text-sm">
+                {projects.map((project, index) => (
+                  <div className="" key={index}>
+                    <div className="flex pt-2">
+                      <div className="pr-5 w-3/12 lg:w-2/12">
+                        {project.time}
                       </div>
-                      <div className="pt-1">{project.description}</div>
-                      <div className="flex-wrap flex">
-                        {project.bubble.map((bubble, index) => (
-                          <div className="pr-2 py-1" key={index}>
-                            <div className="p-1 px-2 bg-[#C7B8D6] rounded-lg">
-                              {bubble}
+                      <div className="w-9/12 lg:w-7/12">
+                        <div className="font-semibold text-[14px]">
+                          {project.title}
+                        </div>
+                        <div className="pt-1">{project.description}</div>
+                        <div className="flex-wrap flex">
+                          {project.bubble.map((bubble, index) => (
+                            <div className="pr-2 py-1" key={index}>
+                              <div className="p-1 px-2  text-[#c7b8D6] ">
+                                {bubble}
+                              </div>
                             </div>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="flex flex-wrap">
-                        {project.links.map((link, index) => GetImage(link))}
+                          ))}
+                        </div>
+                        <div className="flex flex-wrap">
+                          {project.links.map((link, index) => GetImage(link))}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+              {/* Achievements */}
+              <div>Achievements</div>
+              <div className="text-sm">
+                {achievements.map((achievement, index) =>
+                  Achievement(achievement)
+                )}
+              </div>
+              {/* End of scroll */}
             </div>
-            {/* Achievements */}
-            <div>Achievements</div>
-            <div className="text-sm">
-              {achievements.map((achievement, index) =>
-                Achievement(achievement)
-              )}
-            </div>
-            {/* End of scroll */}
           </div>
         </div>
       </div>

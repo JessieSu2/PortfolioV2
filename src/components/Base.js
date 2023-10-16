@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import Welcome from "../components/Welcome";
 
 function Base() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    setTimeout(() => {
-      navigate("/Enter/Home");
-    }, "4000");
-  });
+  // const navigate = useNavigate();
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     navigate("/Enter/Home");
+  //   }, "4000");
+  // });
   return (
     <AnimatePresence>
       <motion.div
