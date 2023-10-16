@@ -1,7 +1,6 @@
 import React from "react";
-import "./Welcome1.css";
-
-function Welcome1() {
+import "../assets/css/Welcome.css";
+function Welcome() {
   return (
     <div className="Welcome1Container justify-center flex text-white">
       <div className="top-0 absolute py-5 appear">Welcome to</div>
@@ -13,4 +12,4 @@ function Welcome1() {
   );
 }
 
-export default Welcome1;
+export default Welcome;

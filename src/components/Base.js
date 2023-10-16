@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import "../App.css";
-import Welcome1 from "../Welcome1/Welcome1";
+import "../assets/css/App.css";
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Welcome from "../components/Welcome";
 
 function Base() {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ function Base() {
         transition={{ duration: 0.5 }}
         exit={{ scale: 0.5 }}
       >
-        <Welcome1 />
+        <Welcome />
       </motion.div>
     </AnimatePresence>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { projects, intro, achievements } from "./info";
+import { projects, intro, achievements } from "../data/info";
 // h-[calc(100vh-3.5rem)]
 import { TbMail } from "react-icons/tb";
 import { TbBrandLinkedin } from "react-icons/tb";
@@ -18,7 +18,7 @@ function GetImage(link) {
         >
           <div className="pr-2 p-1 flex-wrap flex bg-slate-200 rounded-lg">
             <img
-              src={require(`../images/figma.png`)}
+              src={require(`../assets/images/figma.png`)}
               alt="figma"
               className="w-5 mr-1"
             ></img>
@@ -36,7 +36,7 @@ function GetImage(link) {
         >
           <div className="pr-2 p-1 flex-wrap flex bg-slate-200 rounded-lg">
             <img
-              src={require(`../images/github-mark.png`)}
+              src={require(`../assets/images/github-mark.png`)}
               alt="github"
               className="w-5 mr-1"
             ></img>
@@ -54,7 +54,7 @@ function GetImage(link) {
         >
           <div className="pr-2 p-1  flex-wrap flex bg-slate-200 rounded-lg">
             <img
-              src={require(`../images/testflight.png`)}
+              src={require(`../assets/images/testflight.png`)}
               alt="testflight"
               className="w-5 mr-1"
             ></img>
@@ -72,7 +72,7 @@ function GetImage(link) {
         >
           <div className="pr-2 p-1 flex-wrap flex bg-slate-200 rounded-lg">
             <img
-              src={require(`../images/youtube.png`)}
+              src={require(`../assets/images/youtube.png`)}
               alt="youtube"
               className="w-5 mr-1"
             ></img>
@@ -99,7 +99,7 @@ function Achievement(achievement) {
             rel="noopener noreferrer"
           >
             <img
-              src={require(`../images/chain.png`)}
+              src={require(`../assets/images/chain.png`)}
               alt="chain"
               className="w-5 mr-1"
             ></img>
@@ -111,7 +111,7 @@ function Achievement(achievement) {
   );
 }
 
-function Home1() {
+function Home() {
   console.log(projects[0].bubble.sort());
   for (let index = 0; index < projects.length; index++) {
     projects[index].bubble.sort();
@@ -206,4 +206,4 @@ function Home1() {
   );
 }
 
-export default Home1;
+export default Home;
