@@ -121,7 +121,7 @@ function Home() {
       <section>
         <Base />
       </section>
-      <div className="h-screen bg-[#c7d8e0] md:overflow-hidden">
+      <section className="h-screen bg-[#c7d8e0] md:overflow-hidden">
         <div className="md:flex h-screen">
           <div className="md:w-2/5 md:flex-none pt-5">
             <div>Hi, i'm</div>
@@ -208,7 +208,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -1,16 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import "../assets/css/App.css";
-import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Welcome from "../components/Welcome";
 
 function Base() {
-  // const navigate = useNavigate();
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     navigate("/Enter/Home");
-  //   }, "4000");
-  // });
   return (
     <AnimatePresence>
       <motion.div
