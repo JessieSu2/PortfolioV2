@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "../src/assets/css/index.css";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Error from "./Error";
-import Recruiters1 from "./Welcome1/Recruiters1";
-import Contact1 from "./Welcome1/Contact1";
-import Home1 from "./Welcome1/Home1";
-import Base from "./Welcome1/Base";
 import App from "./App";
 
+import Error from "./components/Error";
+import Home from "./components/Home";
+import Recruiters from "./components/Recruiters";
+import Contact from "./components/Contact";
+import Base from "./components/Base";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,15 +22,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/Enter/Home",
-        element: <Home1 />,
+        element: <Home />,
       },
       {
         path: "/Enter/Recruiters",
-        element: <Recruiters1 />,
+        element: <Recruiters />,
       },
       {
         path: "/Enter/Contact",
-        element: <Contact1 />,
+        element: <Contact />,
       },
     ],
   },

@@ -1,11 +1,11 @@
 import React from "react";
 
-function Contact1() {
+function Contact() {
   return (
     <div className="bg-[#c7d8e0] h-[calc(100vh-3.5rem)] flex items-center justify-center">
       <img
         className="max-w-sm top-[3.5rem] left-0 absolute"
-        src={require("../images/Branch.png")}
+        src={require("../assets/images/Branch.png")}
         alt="branch"
       />
       <div>
@@ -20,11 +20,11 @@ function Contact1() {
       </div>
       <img
         className="rotate-180 max-w-sm absolute right-0 bottom-0"
-        src={require("../images/Branch.png")}
+        src={require("../assets/images/Branch.png")}
         alt="branch"
       />
     </div>
   );
 }
 
-export default Contact1;
+export default Contact;
