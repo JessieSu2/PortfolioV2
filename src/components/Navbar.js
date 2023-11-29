@@ -5,16 +5,16 @@ function TopNavbar() {
   return (
     <div className="Navbar py-4 space-x-5 text-white relative">
       <a href="/Enter/Home">
-        <button className="hover:text-pink-300">Home</button>
+        <button className="navbarText">Home</button>
       </a>
       {/* <a href="/Enter/Recruiters">
-        <button className="hover:text-pink-300">Recruiters</button>
+        <button className="">Recruiters</button>
       </a> */}
       <a href="/Enter/Contact">
-        <button className="hover:text-pink-300">Contact</button>
+        <button className="navbarText ">Contact</button>
       </a>
       {/* <a href="/error">
-        <button className="hover:text-pink-300">s</button>
+        <button className="">s</button>
       </a> */}
     </div>
   );
