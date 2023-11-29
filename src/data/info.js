@@ -6,7 +6,7 @@ export const projects = [
     time: "Aug 2023 - Present",
     title: "Portfolio V2",
     description: "Personal portfolio website",
-    bubble: ["React", "Tailwind", "JavaScript", "HTML", "CSS", "Figma"],
+    bubble: ["React", "Tailwind", "HTML", "Figma"],
     tag: "Website",
     links: [
       {
@@ -55,6 +55,11 @@ export const projects = [
     tag: "App",
     links: [
       {
+        name: "GitHub",
+        type: "GitHub",
+        link: "https://github.com/JessieSu2/Nusketch",
+      },
+      {
         name: "Wireframe1",
         type: "Figma",
         link: "https://www.figma.com/file/xwULaRKxopyPXphfAFFuzL/Nusketch?type=design&mode=design&t=dEjTUvhA9ppJOQMj-1",
@@ -96,7 +101,7 @@ export const projects = [
     title: "OneBite",
     description:
       "A web-based restaurant order and delivery system, facilitating menu browsing, ordering, and seamless food delivery for customers",
-    bubble: ["HTML", "CSS", "React", "Bootstrap", "Java", "MySQL"],
+    bubble: ["HTML", "Flask", "Bootstrap", "MySQL"],
     links: [
       {
         name: "Github",
