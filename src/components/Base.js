@@ -6,7 +6,7 @@ function Base() {
   return (
     <AnimatePresence>
       <motion.div
-        className="App h-screen"
+        className="App h-screen "
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
