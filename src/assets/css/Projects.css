@@ -1,52 +1,55 @@
-.project-links{
-    margin: 0.5em;
+@import "Animations.css";
+.project-links {
+  margin: 0.5em;
 }
 
-.pills{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+.pills {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.pill{
-    margin: 0.5em 0.5em;
-    padding: 0.5em 0.5em;
-    background-color: #E2D0E6;
-    border-radius: 0.2em;
-    font-weight: 400;
-    color: #9A6651;
+.pill {
+  margin: 0.5em 0.5em;
+  padding: 0.5em 0.5em;
+  background-color: #e2d0e6;
+  border-radius: 0.2em;
+  font-weight: 400;
+  color: #9a6651;
 }
 
-.project{   
-    justify-content: center;
-    margin: 0em 0em 3em 0em;
-    background-color: rgb(242,243,241);
-    padding: 2em 1em;
+.project {
+  justify-content: center;
+  margin: 0em 0em 3em 0em;
+  background-color: rgb(242, 243, 241);
+  padding: 2em 1em;
 }
 
-.project-time{
-    font-weight: 300;
+.project-time {
+  font-weight: 300;
 }
 
-
-@media screen and (min-width: 769px){
-    .projects{
-        display: inline-grid;
-        grid-auto-columns: auto;
-        grid-gap: 0em 2em;
-        grid-template-columns: auto auto ;
-    }
+.project.active {
+  animation: appear-left 1s ease;
+  opacity: 1;
+}
+@media screen and (min-width: 769px) {
+  .projects {
+    display: inline-grid;
+    grid-auto-columns: auto;
+    grid-gap: 0em 2em;
+    grid-template-columns: auto auto;
+  }
 }
 
-@media screen and (min-width: 1025px){
-    .projects{
-        grid-template-columns: auto auto auto;
-    }
+@media screen and (min-width: 1025px) {
+  .projects {
+    grid-template-columns: auto auto auto;
+  }
 }
 
-@media screen and (min-width: 1201px ){
-    .projects{
-        grid-template-columns: auto auto auto auto;
-    }
+@media screen and (min-width: 1201px) {
+  .projects {
+    grid-template-columns: auto auto auto auto;
+  }
 }
-

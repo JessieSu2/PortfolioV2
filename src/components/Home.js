@@ -103,7 +103,7 @@ function reveal() {
   for (let i = 0; i < reveals.length; i++) {
     let windowHeight = window.innerHeight;
     let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 150;
+    let elementVisible = 0;
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     } else {
@@ -112,9 +112,25 @@ function reveal() {
   }
 }
 
+function revealProjects() {
+  let projects = document.querySelectorAll(".project");
+  for (let i = 0; i < projects.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = projects[i].getBoundingClientRect().top;
+    let elementVisible = 0;
+    if (elementTop < windowHeight - elementVisible) {
+      projects[i].classList.add("active");
+    } else {
+      projects[i].classList.remove("active");
+    }
+  }
+}
+
 function Home() {
   window.addEventListener("scroll", reveal);
   reveal();
+  window.addEventListener("scroll", revealProjects);
+  revealProjects();
   console.log(projects[0].bubble.sort());
   for (let index = 0; index < projects.length; index++) {
     projects[index].bubble.sort();
@@ -159,7 +175,7 @@ function Home() {
       </section>
 
       <section className="half">
-        <div className="text-accent paragraph reveal">{intro}</div>
+        <div className="paragraph text-accent reveal">{intro}</div>
       </section>
 
       <section>
