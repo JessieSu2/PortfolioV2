@@ -1,0 +1,63 @@
+@import "Animations.css";
+.background {
+  background-color: #fafbf9;
+  font-family: "M PLUS 1 Code", sans-serif;
+}
+
+.fullscreen {
+  height: 100vh;
+}
+
+.half {
+  height: 50vh;
+}
+section {
+  margin: 0 3em;
+}
+
+.Introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-text {
+  background-image: -webkit-linear-gradient(75deg, #6c9eb2, #9a6651);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  color: #9a6651;
+}
+.social-icon:hover {
+  /* filter: drop-shadow(10px 10px 10px rgba(226, 208, 230, 2)); */
+  color: #6c9eb2;
+  animation: up-and-down 1s ease-in-out infinite;
+  filter: drop-shadow(5px 5px 5px #bd84c9);
+}
+
+.up-and-down:hover {
+  animation: up-and-down 1s ease-in-out infinite;
+  /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
+  filter: drop-shadow(5px 5px 5px #6c9eb2);
+}
+
+.text-primary {
+  color: #6c9eb2;
+}
+
+.text-accent {
+  color: #9a6651;
+}
+
+.title {
+  font-size: 2.5em;
+}

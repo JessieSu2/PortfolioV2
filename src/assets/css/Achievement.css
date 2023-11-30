@@ -1,0 +1,21 @@
+.Achievement{
+    justify-content: center;
+    padding: 1em 1em;
+    display: flex;
+}
+
+.Achievement-Image{
+    width: 200px;
+}
+
+.Achievement-Description{
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+
+
+.Achievement-link{
+    display: flex;
+    align-items: center;
+}
