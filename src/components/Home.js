@@ -56,6 +56,16 @@ function GetImage(link) {
           {/* <div>{link.name}</div> */}
         </a>
       );
+    } else {
+      return (
+        <a href={link.link} target="_blank" rel="noopener noreferrer">
+          <img
+            src={require(`../assets/images/chain.png`)}
+            alt="link"
+            className="LinkImages up-and-down"
+          ></img>
+        </a>
+      );
     }
   }
 }

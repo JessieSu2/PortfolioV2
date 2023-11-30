@@ -7,6 +7,19 @@ export const projects = [
     title: "TrendyWeb",
     description: "Informational website about Trendy Drinks",
     bubble: ["Svelte", "JavaScript", "TypeScript", "HTML"],
+    tag: "Website",
+    links: [
+      {
+        name: "GitHub",
+        type: "GitHub",
+        link: "https://github.com/JessieSu2/TrendyWeb",
+      },
+      {
+        name: "Link",
+        type: "Link",
+        link: "https://trendydrinks.netlify.app/",
+      },
+    ],
   },
   {
     time: "Aug 2023 - Present",
