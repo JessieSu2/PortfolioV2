@@ -32,30 +32,39 @@
   }
 }
 
+@keyframes appear-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .appear1 {
-  animation: appear 1s ease-in;
+  animation: appear 1s linear;
 }
 
 .appear2 {
-  animation: appear 2s ease-in;
+  animation: appear 2s linear;
 }
 
 .appear3 {
-  animation: appear 3s ease-in;
+  animation: appear 3s linear;
 }
 
 .appear4 {
-  animation: appear 3.5s ease-in;
+  animation: appear 3.5s linear;
 }
 
 .reveal {
   position: relative;
-  transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
 }
 
 .reveal.active {
-  transform: translateY(0);
+  animation: appear-right 1s ease;
   opacity: 1;
 }

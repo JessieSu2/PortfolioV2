@@ -1,6 +1,5 @@
 export const intro =
-  "Gaming when I was younger is what got me into Computer Science. My dream job is to create games for future gamers to enjoy. Learning more about technology I found my interest in Frontend Development / UX & UI / Prototyping / Mobile Development / Full Stack / Gaming development. Having a background as a barista and working in retail I enjoy learning new skills and work well with a team.";
-
+  "I'm passionate about learning and dedicated to pursuing a career that allows me to make a real impact in the tech world. I'm ready to bring my skills, enthusiasm, and fresh perspective to a dynamic team.";
 export const projects = [
   {
     time: "Nov 2023 - Present",
