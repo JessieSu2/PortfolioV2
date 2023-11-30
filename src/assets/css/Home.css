@@ -1,74 +1,63 @@
-.background{
-    background-color: #FAFBF9;
-    font-family: 'M PLUS 1 Code', sans-serif;
+@import "Animations.css";
+.background {
+  background-color: #fafbf9;
+  font-family: "M PLUS 1 Code", sans-serif;
 }
 
-.fullscreen{
-    height: 100vh;
+.fullscreen {
+  height: 100vh;
 }
 
-.half{
-    height: 50vh;
+.half {
+  height: 50vh;
 }
-section{
-    margin: 0 3em;
-}
-
-.Introduction{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section {
+  margin: 0 3em;
 }
 
-.gradient-text{
-    background-image: -webkit-linear-gradient(75deg,#6C9EB2, #9A6651);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.Introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-icons{
-    display: flex;    
-    justify-content: center;
+.gradient-text {
+  background-image: -webkit-linear-gradient(75deg, #6c9eb2, #9a6651);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.social-icon{
-    color: #9A6651;
-}
-.social-icon:hover{
-    /* filter: drop-shadow(10px 10px 10px rgba(226, 208, 230, 2)); */
-    color: #6C9EB2;
-    animation: up-and-down 1s ease-in-out infinite;
+.social-icons {
+  display: flex;
+  justify-content: center;
 }
 
-.up-and-down:hover{
-    animation: up-and-down 1s ease-in-out infinite;
-    /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
-    filter: drop-shadow(5px 5px 5px #6C9EB2);
+.social-icon {
+  color: #9a6651;
+}
+.social-icon:hover {
+  /* filter: drop-shadow(10px 10px 10px rgba(226, 208, 230, 2)); */
+  color: #6c9eb2;
+  animation: up-and-down 1s ease-in-out infinite;
+  filter: drop-shadow(5px 5px 5px #bd84c9);
 }
 
-.text-primary{
-    color: #6C9EB2;
+.up-and-down:hover {
+  animation: up-and-down 1s ease-in-out infinite;
+  /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
+  filter: drop-shadow(5px 5px 5px #6c9eb2);
 }
 
-.text-accent{
-    color: #9A6651;
+.text-primary {
+  color: #6c9eb2;
 }
 
-.title{
-    font-size: 2.5em;
+.text-accent {
+  color: #9a6651;
 }
 
-@keyframes up-and-down{
-    0%{
-        transform: translatey(0px);
-    }
-    50%{
-        transform: translatey(-3px);
-    }
-    100%{
-        transform:translatey(0px);
-    }
+.title {
+  font-size: 2.5em;
 }
-

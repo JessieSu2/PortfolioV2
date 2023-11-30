@@ -3,6 +3,12 @@ export const intro =
 
 export const projects = [
   {
+    time: "Nov 2023 - Present",
+    title: "TrendyWeb",
+    description: "Informational website about Trendy Drinks",
+    bubble: ["Svelte", "JavaScript", "TypeScript", "HTML"],
+  },
+  {
     time: "Aug 2023 - Present",
     title: "Portfolio V2",
     description: "Personal portfolio website",
